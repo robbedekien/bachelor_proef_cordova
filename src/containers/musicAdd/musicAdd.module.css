@@ -1,0 +1,48 @@
+.Container {
+  margin: 1em;
+}
+.Form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Label {
+  width: 90%;
+  text-align: left;
+  font-size: 20px;
+}
+.Input {
+  border: none;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.808);
+  font-size: 20px;
+  font-weight: lighter;
+  margin: 0.5em 0;
+  width: 100%;
+  line-height: 1em;
+  margin-bottom: 1em;
+}
+
+.ImageContainer {
+  max-width: 50%;
+  margin: 1em;
+}
+.Image {
+  border-radius: 5px;
+  max-width: 100%;
+}
+
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  margin-bottom: 1em;
+}
+
+.upload-btn-wrapper input[type="file"] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
