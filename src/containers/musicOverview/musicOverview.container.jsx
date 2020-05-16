@@ -3,11 +3,13 @@ import { useSelector, useDispatch } from "react-redux";
 import * as actions from "../../store/actions/index.actions";
 import MusicCard from "../../components/musicCard/musicCard.component";
 import classes from "./musicOverview.module.css";
+import actionStatus from "../../store/actionStatus";
 
 const MusicOverview = (props) => {
   const dispatch = useDispatch();
   const music = useSelector((state) => state.music);
   const onFetchMusic = () => dispatch(actions.fetchMusic());
+  const musicStatus = useSelector((state) => state.musicStatus);
 
   useEffect(() => {
     if (!music) {

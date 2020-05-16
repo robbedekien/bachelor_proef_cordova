@@ -1,8 +1,8 @@
 {
-  "name": "helloworld",
-  "displayName": "HelloCordova",
+  "name": "MusicApp",
+  "displayName": "MusicApp",
   "version": "1.0.0",
-  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "description": "A simple application to manage your music Library!",
   "main": "index.js",
   "scripts": {
     "start": "react-scripts start",
@@ -13,7 +13,7 @@
   "keywords": [
     "ecosystem:cordova"
   ],
-  "author": "Apache Cordova Team",
+  "author": "Robbe Dekien",
   "license": "Apache-2.0",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.28",
@@ -23,10 +23,16 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "axios": "^0.19.2",
+    "classnames": "^2.2.6",
     "cordova-android": "^8.1.0",
+    "cordova-browser": "^6.0.0",
+    "cordova-ios": "^5.1.1",
     "cordova-plugin-splashscreen": "^5.0.3",
+    "cordova-plugin-x-socialsharing": "^5.6.5",
+    "es6-promise-plugin": "^4.2.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-pull2refresh": "^1.1.4",
     "react-redux": "^7.2.0",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1",
@@ -54,10 +60,17 @@
   "cordova": {
     "plugins": {
       "cordova-plugin-whitelist": {},
-      "cordova-plugin-splashscreen": {}
+      "cordova-plugin-splashscreen": {},
+      "cordova-plugin-x-socialsharing": {
+        "ANDROID_SUPPORT_V4_VERSION": "24.1.1+",
+        "PHOTO_LIBRARY_ADD_USAGE_DESCRIPTION": "This app requires photo library access to function properly.",
+        "PHOTO_LIBRARY_USAGE_DESCRIPTION": "This app requires photo library access to function properly."
+      }
     },
     "platforms": [
-      "android"
+      "android",
+      "ios",
+      "browser"
     ]
   }
 }
