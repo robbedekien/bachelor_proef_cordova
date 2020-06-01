@@ -1,5 +1,6 @@
 .Container {
   margin: 1em;
+  margin-bottom: 3em;
 }
 .Form {
   display: flex;
@@ -30,6 +31,9 @@
 .Image {
   border-radius: 5px;
   max-width: 100%;
+}
+.Submit {
+  margin-bottom: 3em;
 }
 
 .upload-btn-wrapper {
